@@ -1,0 +1,32 @@
+{
+  "name": "rms-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3002",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3002",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "mail:verify": "node scripts/check-mail.mjs",
+    "mail:test": "node scripts/check-mail.mjs --send",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "lucide-react": "1.24.0",
+    "next": "16.4.4",
+    "nodemailer": "^10.3.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.4",
+    "typescript": "^5"
+  }
+}
